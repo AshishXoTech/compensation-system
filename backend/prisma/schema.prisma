@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Level {
+  L3
+  L4
+  L5
+  L6
+  L7
+}
+
+model Company {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  createdAt DateTime @default(now())
+
+  salaries  Salary[]
+}
+
+model Salary {
+  id                 String   @id @default(cuid())
+
+  companyId          String
+  company            Company @relation(fields: [companyId], references: [id])
+
+  role               String
+  level              Level
+  location           String
+  experienceYears    Float
+
+  baseSalary         Float
+  bonus              Float   @default(0)
+  stock              Float   @default(0)
+
+  totalCompensation  Float
+
+  confidenceScore    Float?
+
+  createdAt          DateTime @default(now())
+
+  @@index([companyId])
+  @@index([level])
+  @@index([location])
+  @@index([experienceYears])
+  @@index([totalCompensation])
+}
