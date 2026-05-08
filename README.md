@@ -209,6 +209,9 @@ Compare Page
 Company Analytics
 <img width="1470" height="956" alt="Screenshot 2026-05-08 at 2 46 33 PM" src="https://github.com/user-attachments/assets/23c78aa9-28e0-4d09-8178-04850a2c55c5" />
 
+Mobile Responsive View
+<img width="591" height="1280" alt="WhatsApp Image 2026-05-08 at 15 20 13" src="https://github.com/user-attachments/assets/702e7aeb-4e93-400f-86bf-df8bd3f9c6cb" />
+<img width="591" height="1280" alt="WhatsApp Image 2026-05-08 at 15 20 15" src="https://github.com/user-attachments/assets/b6071377-2759-4c46-b597-f1e7d065bda9" />
 
 
 Future Improvements
