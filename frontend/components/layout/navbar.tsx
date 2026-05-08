@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
@@ -54,10 +55,14 @@ export function Navbar() {
                 className="flex items-center gap-2 font-semibold"
                 onClick={() => setMobileOpen(false)}
               >
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-foreground text-xs font-bold">
-                  CI
-                </div>
-                <span className="text-sm">CompIntel</span>
+                <Image
+                  src="/logo.svg"
+                  alt=""
+                  className="h-7 w-7 shrink-0"
+                  width={28}
+                  height={28}
+                />
+                <span className="text-sm">Complntel</span>
               </Link>
             </div>
             <nav className="flex flex-col gap-1 p-3">
@@ -87,11 +92,15 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 mr-6">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-foreground text-xs font-bold">
-            CI
-          </div>
+          <Image
+            src="/logo.svg"
+            alt=""
+            className="h-7 w-7 shrink-0"
+            width={28}
+            height={28}
+          />
           <span className="hidden font-semibold text-sm sm:inline-block">
-            CompIntel
+            Complntel
           </span>
         </Link>
 

@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Complntel logo">
+  <style>
+    .mark-bg { fill: #0f172a; }
+    .mark-stroke { stroke: #f8fafc; }
+    .bar { fill: #f8fafc; }
+    @media (prefers-color-scheme: dark) {
+      .mark-bg { fill: #f8fafc; }
+      .mark-stroke { stroke: #020617; }
+      .bar { fill: #020617; }
+    }
+  </style>
+  <rect class="mark-bg" x="10" y="10" width="108" height="108" rx="28"/>
+  <path class="mark-stroke" d="M83 40C77.9 34.9 70.9 32 63.5 32C46.1 32 32 46.1 32 63.5C32 80.9 46.1 95 63.5 95C71.4 95 78.6 92.1 84.1 87.3" stroke-width="10" stroke-linecap="round"/>
+  <rect class="bar" x="58" y="70" width="8" height="14" rx="3"/>
+  <rect class="bar" x="72" y="60" width="8" height="24" rx="3"/>
+  <rect class="bar" x="86" y="48" width="8" height="36" rx="3"/>
+</svg>
